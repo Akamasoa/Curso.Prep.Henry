@@ -129,6 +129,7 @@ function esImpar(num) {
     return true;
   }else{
     return false;
+  }
 }
 
 function elevarAlCuadrado(num) {
@@ -141,7 +142,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  num**3;
+  return num**3;
 }
 
 function elevar(num, exponent) {
@@ -181,7 +182,6 @@ function esPositivo(numero) {
     return false;
   }
   }
-}
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
@@ -201,7 +201,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + nombre + '!';
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -240,7 +240,7 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra === a , e , i , o , u){
+  if(letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u'){
     return "Es vocal";
   } else if(letra.length>1){
     return "Dato incorrecto"
