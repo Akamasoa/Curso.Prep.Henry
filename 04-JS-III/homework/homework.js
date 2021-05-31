@@ -221,21 +221,23 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  var array = [],
+  var array = [];
   var sumanumeros = numero;
-  for(var i = 0; i < 10; i++){
-    sumanumeros = sumanumeros +2;  //Valor de la suma.
-    if(sumanumeros === i){
-      break;
+  for(var i= 0; i<10; i++) {
+    sumanumeros = sumanumeros + 2;
+    if(sumanumeros === i) break;
+    else {
+      array.push(sumanumeros);
     }
-    array.push(sumanumeros);
-    }
-    if(i < 10){
+  }
+  if(i < 10) {  //Es el único caso en que 'i' sería menor a 10 e igual salir del for; si breakeó (si no llegaría siempre a 10 debido al ++).
     return 'Se interrumpió la ejecución';
-  } else {
+  }
+  else {
     return array;
   }
-  }
+}
+
 
 
 
@@ -246,6 +248,14 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var array = [];
+  var sumanumeros = numero;
+  for(var i = 0; i < 10; i++){
+    if(i === 5) continue; //A diferencia de la sentencia break(que interrupe), 'continue' no termina la ejecución del bucle por completo; en cambio, salta a la próxima iteración.
+    sumanumeros = sumanumeros + 2;
+    array.push(sumanumeros);
+  }
+  return array;
 }
 
 
