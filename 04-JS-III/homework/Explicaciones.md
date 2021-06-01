@@ -9,4 +9,4 @@ Para crear un array simplemente envolvemos una serie de elementos entre corchete
 
 const nombresVarios = ['Franco', 'Antonio', 'Andrea', 'Luis'];
 
-Podemos agregar al contenedor (siempre separadas por coma) tantas cadenas, números o booleanos como queramos y acceder a esos elementos cuando queramos..
+Podemos agregar al contenedor (siempre separadas por coma) tantas cadenas, números o booleanos como queramos. Incluso otro array. También podemos acceder a esos elementos cuando queramos..

@@ -251,7 +251,7 @@ function continueStatement(numero) {
   var array = [];
   var sumanumeros = numero;
   for(var i = 0; i < 10; i++){
-    if(i === 5) continue; //A diferencia de la sentencia break(que interrupe), 'continue' no termina la ejecución del bucle por completo; en cambio, salta a la próxima iteración.
+    if(i === 5) continue; //A diferencia de la sentencia break(que interrupe), 'continue' no termina la ejecución del bucle por completo(saltea todo lo que hay después).
     sumanumeros = sumanumeros + 2;
     array.push(sumanumeros);
   }

@@ -15,7 +15,7 @@ Para crear un string, simplemente encerramos nuestra cadena de caracteres entre 
 
 FUNCIONES:
 Una función es un bloque de código capaz de realizar una o más tareas, y luego devolver un valor como resultado.
-En JavaScript, las funciones también son un tipo de objeto. ¿Que son los objetos en Javascript? Un objeto es un entidad independiente con propiedades y tipos. Comparalo con una taza, por ejemplo. Una taza es un objeto con propiedades. Una taza tiene un color, un diseño, un peso, un material del que está hecha, etc. Del mismo modo, los objetos de JavaScript pueden tener propiedades que definan sus características.
+En JavaScript, las funciones también son un tipo de objeto (que se verán más adelante). 
 
 // declara una función `sumar`
 // que retorna la operación 2 + 2
