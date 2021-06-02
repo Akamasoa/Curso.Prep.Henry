@@ -142,10 +142,10 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-  var TotalLikes = 0;
-
-  for(var i = 0; i < usuario.posts.length; i++) {
-    TotalLikes = TotalLikes + usuario.posts[i].likes;
+  var TotalLikes = 0;                                  
+                                                       //Respuesta del zoom
+  for(var i = 0; i < usuario.posts.length; i++) {      //for(const element of usuario.post){
+    TotalLikes = TotalLikes + usuario.posts[i].likes;  //TotalLikes = TotalLikes + element.post
   }
 
   return TotalLikes;
@@ -169,8 +169,8 @@ function agregarMetodoCalculoDescuento(producto) {
   // descuento: 
   // calcularPrecioDescuento: 
   //}
-  producto.calcularPrecioDescuento = function(){
-    return this.precio - (this.precio * this.porcentajeDeDescuento);
+  producto.calcularPrecioDescuento = function(){                     //En la corrección de zoom:
+    return this.precio - (this.precio * this.porcentajeDeDescuento); //return producto.precio - (producto.precio * producto.porcentajeDeDescuento);
   }
   return producto;
   }
